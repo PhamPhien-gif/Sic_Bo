@@ -7,6 +7,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/Sic_Bo",
+  assetPrefix: "/Sic_Bo",
   eslint: {
     ignoreDuringBuilds: true,
   },
