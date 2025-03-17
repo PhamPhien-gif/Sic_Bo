@@ -7,6 +7,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export", // Xuất thành file HTML tĩnh
+  distDir: "out",   // Lưu kết quả vào thư mục "out"
   basePath: "/Sic_Bo",
   assetPrefix: "/Sic_Bo",
   eslint: {
