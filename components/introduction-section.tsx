@@ -31,7 +31,7 @@ export default function IntroductionSection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Introduction</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We are a team of 5 members, each bringing different skills and expertise to the table. We focus on
+            We are a team of 4 members, each bringing different skills and expertise to the table. We focus on
             developing and executing creative projects with the goal of providing practical solutions and improving
             workflows.
           </p>
@@ -57,13 +57,18 @@ export default function IntroductionSection() {
             {[1, 2, 3, 4, 5].map((member) => (
               <div key={member} className="flex flex-col items-center">
                 <div className="w-24 h-24 rounded-full bg-secondary mb-4 flex items-center justify-center text-secondary-foreground font-bold text-xl">
-                  TM{member}
+                  {/* TM{member} */}
+                  <img
+                    src={`/placeholder-user.jpg`}
+                    alt={`Team Member ${member}`}
+                    className="w-24 h-24 rounded-full object-cover mb-4"
+                  />
                 </div>
                 <h4 className="font-medium">Team Member {member}</h4>
                 <p className="text-sm text-muted-foreground text-center">
                   {
                     ["Project Manager", "UX Designer", "Frontend Developer", "Backend Developer", "QA Specialist"][
-                      member - 1
+                    member - 1
                     ]
                   }
                 </p>
