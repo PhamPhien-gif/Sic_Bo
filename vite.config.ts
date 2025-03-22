@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/your-repo-name/',
+  base: '/Sic_Bo/',
   css: {
     postcss: {
       plugins: [tailwind()],
