@@ -14,11 +14,13 @@ createRoot(document.getElementById("app") as HTMLElement).render(
     <Router>
       <Layout>
         <Routes>
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/project" element={<ProjectPage />} />
-          <Route path="/timeline" element={<TimelinePage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/Sic_Bo" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Sic_Bo/home" element={<HomePage />} />
+          <Route path="/Sic_Bo/about" element={<AboutPage />} />
+          <Route path="/Sic_Bo/project" element={<ProjectPage />} />
+          <Route path="/Sic_Bo/timeline" element={<TimelinePage />} />
+          <Route path="/Sic_Bo/contact" element={<ContactPage />} />
         </Routes>
       </Layout>
     </Router>

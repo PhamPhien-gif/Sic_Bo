@@ -19,10 +19,10 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   }
 
   const navItems = [
-    { label: t("nav.home"), path: "/home" },
-    { label: t("nav.aboutUs"), path: "/about" },
-    { label: t("nav.project"), path: "/project" },
-    { label: t("nav.timeline"), path: "/timeline" },
+    { label: t("nav.home"), path: "/Sic_Bo/home" },
+    { label: t("nav.aboutUs"), path: "/Sic_Bo/about" },
+    { label: t("nav.project"), path: "/Sic_Bo/project" },
+    { label: t("nav.timeline"), path: "/Sic_Bo/timeline" },
   ]
 
   return (
