@@ -1,13 +1,13 @@
-import { StrictMode } from "react"
-import { createRoot } from "react-dom/client"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import { Layout } from "./components/Layout"
-import "./i18n"
-import { AboutPage } from "./pages/About"
-import { ContactPage } from "./pages/Contact"
-import { HomePage } from "./pages/Home"
-import { ProjectPage } from "./pages/Project"
-import { TimelinePage } from "./pages/Timeline"
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Layout } from "./components/Layout";
+import "./i18n";
+import { AboutPage } from "./pages/About";
+import { ContactPage } from "./pages/Contact";
+import { HomePage } from "./pages/Home";
+import { ProjectPage } from "./pages/Project";
+import { TimelinePage } from "./pages/Timeline";
 
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
@@ -23,5 +23,4 @@ createRoot(document.getElementById("app") as HTMLElement).render(
       </Layout>
     </Router>
   </StrictMode>,
-)
-
+);

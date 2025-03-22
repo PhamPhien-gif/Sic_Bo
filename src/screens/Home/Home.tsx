@@ -1,23 +1,24 @@
-import { useTranslation } from "react-i18next"
-import { Button } from "../../components/ui/button"
-import { LanguageSwitcher } from "../../components/ui/language-switcher"
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Button } from "../../components/ui/button";
+import { LanguageSwitcher } from "../../components/ui/language-switcher";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-} from "../../components/ui/navigation-menu"
+} from "../../components/ui/navigation-menu";
 
 export const Home = (): JSX.Element => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   // Navigation menu items
   const navItems = [
-    { label: t("nav.home"), active: true },
-    { label: t("nav.aboutUs"), active: false },
-    { label: t("nav.project"), active: false },
-    { label: t("nav.timeline"), active: false },
-  ]
+    { label: t('nav.home'), active: true },
+    { label: t('nav.aboutUs'), active: false },
+    { label: t('nav.project'), active: false },
+    { label: t('nav.timeline'), active: false },
+  ];
 
   return (
     <div className="bg-white flex flex-row justify-center w-full">
@@ -26,7 +27,9 @@ export const Home = (): JSX.Element => {
         <header className="w-full h-auto relative">
           <div className="flex w-full flex-col md:flex-row h-auto md:h-[72px] items-center justify-between px-4 md:px-6 py-4 md:py-2.5 bg-basewhite shadow-shadow-nav-shadown">
             <div className="flex items-center mb-4 md:mb-0">
-              <h1 className="font-['Rubik_Bubbles',Helvetica] font-normal text-black text-2xl md:text-3xl">PMIT</h1>
+              <h1 className="font-['Rubik_Bubbles',Helvetica] font-normal text-black text-2xl md:text-3xl">
+                PMIT
+              </h1>
             </div>
 
             <NavigationMenu className="mb-4 md:mb-0">
@@ -45,7 +48,7 @@ export const Home = (): JSX.Element => {
               <LanguageSwitcher />
               <Button className="px-[25px] py-3.5 rounded-[5px] w-full md:w-auto [background:linear-gradient(225deg,rgba(102,117,247,1)_0%,rgba(87,0,123,1)_100%)]">
                 <span className="font-button-text-btn-lg font-[number:var(--button-text-btn-lg-font-weight)] text-graygray-50 text-[length:var(--button-text-btn-lg-font-size)] tracking-[var(--button-text-btn-lg-letter-spacing)] leading-[var(--button-text-btn-lg-line-height)] whitespace-nowrap [font-style:var(--button-text-btn-lg-font-style)]">
-                  {t("nav.contactUs")}
+                  {t('nav.contactUs')}
                 </span>
               </Button>
             </div>
@@ -58,18 +61,18 @@ export const Home = (): JSX.Element => {
             <div className="flex flex-col items-start gap-7">
               <div className="space-y-4">
                 <h2 className="text-3xl md:text-5xl font-bold text-center md:text-left">
-                  <span className="text-black">{t("hero.title1")} </span>
-                  <span className="text-purple-500">{t("hero.title2")}</span>
-                  <span className="text-black"> {t("hero.title3")}</span>
+                  <span className="text-black">{t('hero.title1')} </span>
+                  <span className="text-purple-500">{t('hero.title2')}</span>
+                  <span className="text-black"> {t('hero.title3')}</span>
                 </h2>
                 <h2 className="text-3xl md:text-5xl font-bold text-center md:text-left">
-                  <span className="text-black">{t("hero.title4")} </span>
-                  <span className="text-purple-500">{t("hero.title5")}</span>
+                  <span className="text-black">{t('hero.title4')} </span>
+                  <span className="text-purple-500">{t('hero.title5')}</span>
                 </h2>
               </div>
 
               <p className="w-full md:w-[531px] text-center md:text-left font-paragraphs-default-lg font-[number:var(--paragraphs-default-lg-font-weight)] text-graygray-700 text-[length:var(--paragraphs-default-lg-font-size)] tracking-[var(--paragraphs-default-lg-letter-spacing)] leading-[var(--paragraphs-default-lg-line-height)] [font-style:var(--paragraphs-default-lg-font-style)]">
-                {t("hero.description")}
+                {t('hero.description')}
               </p>
             </div>
           </div>
@@ -85,12 +88,14 @@ export const Home = (): JSX.Element => {
             {/* Company Info */}
             <div className="space-y-4">
               <h3 className="font-['Rubik_Bubbles',Helvetica] text-2xl">PMIT</h3>
-              <p className="text-gray-400 text-sm">{t("footer.companyDesc")}</p>
+              <p className="text-gray-400 text-sm">
+                {t('footer.companyDesc')}
+              </p>
             </div>
 
             {/* Quick Links */}
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">{t("footer.quickLinks")}</h4>
+              <h4 className="text-lg font-semibold">{t('footer.quickLinks')}</h4>
               <ul className="space-y-2">
                 {navItems.map((item) => (
                   <li key={item.label}>
@@ -104,49 +109,32 @@ export const Home = (): JSX.Element => {
 
             {/* Services */}
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">{t("footer.services")}</h4>
+              <h4 className="text-lg font-semibold">{t('footer.services')}</h4>
               <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    {t("footer.webDev")}
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    {t("footer.mobileDev")}
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    {t("footer.cloudSolutions")}
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    {t("footer.devOps")}
-                  </a>
-                </li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.webDev')}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.mobileDev')}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.cloudSolutions')}</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.devOps')}</a></li>
               </ul>
             </div>
 
             {/* Contact Info */}
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">{t("footer.contactUs")}</h4>
+              <h4 className="text-lg font-semibold">{t('footer.contactUs')}</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>{t("footer.email")}</li>
-                <li>{t("footer.phone")}</li>
-                <li>{t("footer.address")}</li>
+                <li>{t('footer.email')}</li>
+                <li>{t('footer.phone')}</li>
+                <li>{t('footer.address')}</li>
               </ul>
             </div>
           </div>
 
           {/* Bottom Bar */}
           <div className="mt-12 pt-8 border-t border-gray-800 text-center md:text-left text-gray-400 text-sm">
-            <p>{t("footer.copyright")}</p>
+            <p>{t('footer.copyright')}</p>
           </div>
         </footer>
       </div>
     </div>
-  )
-}
-
+  );
+};

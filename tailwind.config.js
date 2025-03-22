@@ -1,5 +1,9 @@
 module.exports = {
-  content: ["./src/**/*.{html,js,ts,jsx,tsx}", "app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./src/**/*.{html,js,ts,jsx,tsx}",
+    "app/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -83,5 +87,4 @@ module.exports = {
   },
   plugins: [],
   darkMode: ["class"],
-}
-
+};
