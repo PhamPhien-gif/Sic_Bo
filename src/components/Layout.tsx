@@ -32,7 +32,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         <header className="w-full h-auto relative">
           <div className="flex w-full flex-row h-auto md:h-[72px] items-center justify-between px-4 md:px-6 py-4 md:py-2.5 bg-basewhite shadow-shadow-nav-shadown">
             <div className="flex items-center">
-              <Link to="/">
+              <Link to="/Sic_Bo/">
                 <h1 className="font-['Rubik_Bubbles',Helvetica] font-normal text-black text-2xl md:text-3xl">PMIT</h1>
               </Link>
             </div>
