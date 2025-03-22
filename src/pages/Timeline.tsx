@@ -6,6 +6,7 @@ const timelineEvents = [
     year: "22/03/2025",
     title: "Initial Assignment",
     description: "The project team was assigned their initial roles and responsibilities.",
+    link: "https://docs.google.com/document/d/1NTO3YWW4wECgpWdaufDid6h45aQ0_08RHW5R6OpZ6Do/edit?tab=t.0",
   },
   // {
   //   year: "2024",
@@ -43,15 +44,20 @@ export const TimelinePage = () => {
               {/* Dot */}
               <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-purple-500 rounded-full transform -translate-x-1/2 mt-2"></div>
               
-              {/* Content */}
+              {/* Content with clickable link */}
               <div className="md:w-1/2 ml-8 md:ml-0">
-                <div className="bg-white p-6 rounded-lg shadow-lg">
+                <a
+                  href={event.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 transition"
+                >
                   <span className="text-purple-500 font-bold text-xl mb-2 block">
                     {event.year}
                   </span>
                   <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
                   <p className="text-gray-600">{event.description}</p>
-                </div>
+                </a>
               </div>
               
               {/* Spacer for alignment */}
