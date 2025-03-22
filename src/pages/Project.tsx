@@ -2,23 +2,23 @@ import { useTranslation } from "react-i18next"
 
 // Single featured project with more details
 const featuredProject = {
-  title: "E-Commerce Platform",
+  title: "Warehouse Management Application",
   description:
-    "A comprehensive online shopping solution designed for modern businesses. This platform offers a seamless shopping experience with advanced features including product management, secure payment processing, inventory tracking, and customer analytics.",
+    "A desktop application designed to help businesses efficiently track inventory levels, manage stock movements, and oversee related transactions. The system supports multiple user roles and provides detailed reports to optimize warehouse operations.",
   longDescription:
-    "Our E-Commerce Platform is built with scalability and performance in mind. It handles high traffic volumes while maintaining fast load times and responsive design across all devices. The admin dashboard provides powerful tools for business owners to manage their online presence effectively.",
-  tech: ["React", "Node.js", "MongoDB", "Redux", "Express", "AWS"],
+    "Our Warehouse Management Application is developed with scalability and performance in mind. It offers a structured approach to inventory tracking, ensuring accurate stock levels and smooth warehouse workflows. The application includes user role management, secure authentication, and comprehensive reporting features to aid decision-making.",
+  tech: ["Java", "JavaFX", "MySQL", "Spring Boot", "Hibernate", "Git"],
   features: [
-    "Responsive design for all devices",
-    "Secure payment gateway integration",
-    "Real-time inventory management",
-    "Advanced search and filtering",
-    "Customer account management",
-    "Analytics and reporting dashboard",
+    "Multi-user role support",
+    "Real-time inventory tracking",
+    "Stock import and export management",
+    "Detailed transaction history",
+    "Comprehensive reporting system",
+    "Secure authentication and access control",
   ],
-  image: "https://placehold.co/800x500/purple/white?text=E-Commerce+Platform",
+  image: "/Sic_Bo/WareHouse.avif",
   timeline: "6 months",
-  client: "RetailTech Solutions",
+  client: "Enterprise Logistics Solutions",
 }
 
 export const ProjectPage = () => {
@@ -26,7 +26,7 @@ export const ProjectPage = () => {
 
   return (
     <div className="px-4 md:px-[148px] py-12">
-      <h1 className="text-4xl font-bold mb-8">Featured Project</h1>
+      <h1 className="text-4xl font-bold mb-8">WareHouse Project</h1>
 
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         {/* Project Image */}
@@ -89,9 +89,12 @@ export const ProjectPage = () => {
           <div className="mt-10 pt-8 border-t border-gray-200">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <p className="text-gray-700">Interested in a similar solution for your business?</p>
-              <button className="px-6 py-3 rounded-[5px] [background:linear-gradient(225deg,rgba(102,117,247,1)_0%,rgba(87,0,123,1)_100%)] text-white font-semibold">
-                Contact Us About This Project
-              </button>
+              <a href="https://www.ecount.com/vn/?S=01&C=11768428526&K=115655127018&keyword=qu%E1%BA%A3n%20l%C3%BD%20kho&matchtype=p&gad_source=1&gclid=Cj0KCQjwv_m-BhC4ARIsAIqNeBvXKwmGa0CtBE3jVa06xYod84TAkp8LhPdab-o6IqNISw0YcgMTMrMaAieDEALw_wcB" target="_blank" rel="noopener noreferrer">
+                <button className="px-6 py-3 rounded-[5px] [background:linear-gradient(225deg,rgba(102,117,247,1)_0%,rgba(87,0,123,1)_100%)] text-white font-semibold">
+                  Our Project
+                </button>
+              </a>
+
             </div>
           </div>
         </div>

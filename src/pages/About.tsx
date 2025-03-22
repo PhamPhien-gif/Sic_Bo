@@ -2,30 +2,30 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 const teamMembers = [
   {
-    name: "John Smith",
+    name: "Thanh Phiên",
     role: "CEO & Founder",
-    avatar: "/web-development-1.png",
+    avatar: "/Sic_Bo/Saitama.webp",
     description: "With over 15 years of experience in software development and business leadership, John leads our company's vision and strategy.",
     expertise: ["Business Strategy", "Software Architecture", "Team Leadership"]
   },
   {
-    name: "Sarah Johnson",
+    name: "Tùng Nhân",
     role: "Technical Lead",
-    avatar: "https://randomuser.me/api/portraits/women/1.jpg",
+    avatar: "/Sic_Bo/Nhan.png",
     description: "Sarah brings 10 years of expertise in full-stack development and leads our technical innovations and architecture decisions.",
     expertise: ["Full-stack Development", "System Design", "Cloud Architecture"]
   },
   {
-    name: "David Chen",
+    name: "Đình Phát",
     role: "Senior Developer",
-    avatar: "https://randomuser.me/api/portraits/men/2.jpg",
+    avatar: "/Sic_Bo/Phat.jpg",
     description: "A passionate developer with deep knowledge in mobile and web technologies, David leads our front-end development initiatives.",
     expertise: ["React", "Mobile Development", "UI/UX Design"]
   },
   {
-    name: "Emily Wang",
+    name: "Thế Phong",
     role: "Project Manager",
-    avatar: "https://randomuser.me/api/portraits/women/2.jpg",
+    avatar: "/Sic_Bo/Phong.png",
     description: "Emily ensures smooth project delivery and client satisfaction with her excellent communication and management skills.",
     expertise: ["Project Management", "Agile Methodologies", "Client Relations"]
   }
