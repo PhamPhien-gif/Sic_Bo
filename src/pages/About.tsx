@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: "John Smith",
     role: "CEO & Founder",
-    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+    avatar: "/web-development-1.png",
     description: "With over 15 years of experience in software development and business leadership, John leads our company's vision and strategy.",
     expertise: ["Business Strategy", "Software Architecture", "Team Leadership"]
   },
