@@ -68,7 +68,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             {/* Desktop Actions */}
             <div className="hidden md:flex gap-4 items-center">
               <LanguageSwitcher />
-              <Link to="/contact">
+              <Link to="/Sic_Bo/contact">
                 <Button className="px-[25px] py-3.5 rounded-[5px] w-full md:w-auto [background:linear-gradient(225deg,rgba(102,117,247,1)_0%,rgba(87,0,123,1)_100%)]">
                   <span className="font-button-text-btn-lg font-[number:var(--button-text-btn-lg-font-weight)] text-graygray-50 text-[length:var(--button-text-btn-lg-font-size)] tracking-[var(--button-text-btn-lg-letter-spacing)] leading-[var(--button-text-btn-lg-line-height)] whitespace-nowrap [font-style:var(--button-text-btn-lg-font-style)]">
                     {t("nav.contactUs")}
@@ -104,7 +104,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
               {/* Mobile Actions */}
               <div className="flex flex-col space-y-4 pt-4 border-t border-gray-200">
                 <LanguageSwitcher />
-                <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
+                <Link to="/Sic_Bo/contact" onClick={() => setMobileMenuOpen(false)}>
                   <Button className="w-full px-[25px] py-3.5 rounded-[5px] [background:linear-gradient(225deg,rgba(102,117,247,1)_0%,rgba(87,0,123,1)_100%)]">
                     <span className="font-button-text-btn-lg font-[number:var(--button-text-btn-lg-font-weight)] text-graygray-50 text-[length:var(--button-text-btn-lg-font-size)] tracking-[var(--button-text-btn-lg-letter-spacing)] leading-[var(--button-text-btn-lg-line-height)] whitespace-nowrap [font-style:var(--button-text-btn-lg-font-style)]">
                       {t("nav.contactUs")}
