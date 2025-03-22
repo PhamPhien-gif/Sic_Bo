@@ -1,64 +1,88 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Button } from "../../components/ui/button";
+import { Card, CardContent } from "../../components/ui/card";
 
-const projects = [
-  {
-    title: "E-Commerce Platform",
-    description: "A full-featured online shopping platform with advanced features",
-    tech: ["React", "Node.js", "MongoDB"],
-    image: "https://placehold.co/600x400/purple/white?text=E-Commerce",
+// Content sections data
+const sections = {
+  introduction: {
+    title: "Giới thiệu",
+    content:
+      "Ứng dụng quản lý kho hàng giúp doanh nghiệp theo dõi lượng hàng tồn kho, nhập - xuất kho và quản lý các giao dịch liên quan. Hệ thống hỗ trợ nhiều người dùng với các vai trò khác nhau, cung cấp báo cáo chi tiết về tình trạng kho, giúp tối ưu hóa hoạt động kinh doanh.",
   },
-  {
-    title: "Healthcare Management System",
-    description: "Digital solution for managing healthcare facilities",
-    tech: ["Angular", "Python", "PostgreSQL"],
-    image: "https://placehold.co/600x400/blue/white?text=Healthcare",
+  objectives: {
+    title: "Mục tiêu",
+    content:
+      "Ứng dụng quản lý kho hàng giúp doanh nghiệp theo dõi lượng hàng tồn kho, nhập - xuất kho và quản lý các giao dịch liên quan. Hệ thống hỗ trợ nhiều người dùng với các vai trò khác nhau, cung cấp báo cáo chi tiết về tình trạng kho, giúp tối ưu hóa hoạt động kinh doanh.",
   },
-  {
-    title: "Financial Analytics Dashboard",
-    description: "Real-time financial data visualization and analysis tool",
-    tech: ["Vue.js", "Django", "Redis"],
-    image: "https://placehold.co/600x400/green/white?text=Analytics",
+  products: {
+    title: "Sản phẩm",
+    buttonText: "My project",
   },
-  {
-    title: "Social Media App",
-    description: "Modern social networking platform with real-time features",
-    tech: ["React Native", "GraphQL", "AWS"],
-    image: "https://placehold.co/600x400/orange/white?text=Social+Media",
-  },
-];
+};
 
-export const ProjectPage = () => {
-  const { t } = useTranslation();
-
+export const Project = (): JSX.Element => {
   return (
-    <div className="px-4 md:px-[148px] py-12">
-      <h1 className="text-4xl font-bold mb-8">Our Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        {projects.map((project, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img 
-              src={project.image} 
-              alt={project.title} 
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {project.tech.map((tech, techIndex) => (
-                  <span 
-                    key={techIndex}
-                    className="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+    <div className="relative bg-white overflow-hidden">
+      {/* Introduction Section */}
+      <section className="w-full mt-[186px]">
+        <Card className="w-full bg-[#f1f1ff] rounded-[0px_30px_30px_0px] border border-solid border-[#e7daec]">
+          <CardContent className="p-0">
+            <div className="text-center pt-[27px]">
+              <h2 className="font-headings-headings-h2 font-[number:var(--headings-headings-h2-font-weight)] text-graygray-900 text-[length:var(--headings-headings-h2-font-size)] tracking-[var(--headings-headings-h2-letter-spacing)] leading-[var(--headings-headings-h2-line-height)]">
+                {sections.introduction.title}
+              </h2>
             </div>
-          </div>
-        ))}
-      </div>
+
+            <div className="px-[197px] pt-[70px] pb-[97px]">
+              <p className="[font-family:'Inter',Helvetica] font-normal text-graysblack text-2xl tracking-[0] leading-9">
+                {sections.introduction.content}
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Objectives Section */}
+      <section className="w-full flex mt-[40px]">
+        <div className="w-1/2 pl-[89px]">
+          <img
+            className="w-[580px] h-[459px] object-cover"
+            alt="Warehouse management system"
+            src="/image-2.png"
+          />
+        </div>
+
+        <div className="w-1/2 pr-[50px]">
+          <h2 className="font-headings-headings-h2 font-[number:var(--headings-headings-h2-font-weight)] text-graygray-900 text-[length:var(--headings-headings-h2-font-size)] tracking-[var(--headings-headings-h2-letter-spacing)] leading-[var(--headings-headings-h2-line-height)] whitespace-nowrap mb-[73px]">
+            {sections.objectives.title}
+          </h2>
+
+          <p className="font-paragraphs-default-lg font-[number:var(--paragraphs-default-lg-font-weight)] text-graysblack text-[length:var(--paragraphs-default-lg-font-size)] tracking-[var(--paragraphs-default-lg-letter-spacing)] leading-[var(--paragraphs-default-lg-line-height)]">
+            {sections.objectives.content}
+          </p>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="w-full mt-[100px]">
+        <Card className="w-full h-[276px] bg-[#f0fff7] rounded-[0px_30px_30px_0px] border border-solid border-[#e7daec]">
+          <CardContent className="p-0 flex items-center justify-between">
+            <div className="pl-[197px]">
+              <h2 className="font-headings-headings-h2 font-[number:var(--headings-headings-h2-font-weight)] text-graygray-900 text-[length:var(--headings-headings-h2-font-size)] tracking-[var(--headings-headings-h2-letter-spacing)] leading-[var(--headings-headings-h2-line-height)] whitespace-nowrap">
+                {sections.products.title}
+              </h2>
+            </div>
+
+            <div className="pr-[167px]">
+              <Button className="w-[482px] h-[75px] bg-[#3d63e9] rounded-[5px] shadow-btn-shadow">
+                <span className="[font-family:'Inter',Helvetica] font-bold text-graygray-50 text-4xl tracking-[0] leading-[14px] whitespace-nowrap">
+                  {sections.products.buttonText}
+                </span>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
     </div>
   );
 };
