@@ -3,25 +3,25 @@ import { useTranslation } from "react-i18next";
 
 const timelineEvents = [
   {
-    year: "2025",
-    title: "Global Expansion",
-    description: "Opening new offices in Europe and Asia",
+    year: "22/03/2025",
+    title: "Initial Assignment",
+    description: "The project team was assigned their initial roles and responsibilities.",
   },
-  {
-    year: "2024",
-    title: "Major Milestones",
-    description: "Reached 1000+ successful project deliveries",
-  },
-  {
-    year: "2023",
-    title: "Innovation Hub",
-    description: "Launched our innovation lab for R&D",
-  },
-  {
-    year: "2022",
-    title: "Company Founded",
-    description: "Started with a team of 5 passionate developers",
-  },
+  // {
+  //   year: "2024",
+  //   title: "Major Milestones",
+  //   description: "Reached 1000+ successful project deliveries",
+  // },
+  // {
+  //   year: "2023",
+  //   title: "Innovation Hub",
+  //   description: "Launched our innovation lab for R&D",
+  // },
+  // {
+  //   year: "2022",
+  //   title: "Company Founded",
+  //   description: "Started with a team of 5 passionate developers",
+  // },
 ];
 
 export const TimelinePage = () => {
